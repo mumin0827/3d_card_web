@@ -1,0 +1,49 @@
+.container {
+    width: 350px;
+    height: 221px;
+    transition : all 0.1s;
+    position: relative;
+    margin: 10px auto
+}
+
+.overlay {
+    position: absolute;
+    width: 350px;
+    height: 221px;
+    border-radius: 15px;
+    background: radial-gradient(circle,
+    transparent 0%,
+    rgba(255, 0, 0, 0.8),
+    transparent 100%);
+    filter: brightness(1.1) opacity(0.8);
+    mix-blend-mode: color-dodge;
+    background-size: 150% 150%;
+    background-position: 100%;
+    transition: all 0.1s;
+}
+
+.cards {
+    width: 350px;
+    height: 221px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("cards/kakao_shinhan_춘식.webp");
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'seolleimcool-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/seolleimcool-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.c_text{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 15%;
+    font-family: 'seolleimcool-SemiBold', sans-serif;
+}
